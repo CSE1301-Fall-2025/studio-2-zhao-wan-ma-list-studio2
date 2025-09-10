@@ -15,7 +15,7 @@ int winLimit = in.nextInt();
 
 for (int i = totalSimulations; i>0; i--){
     int currentAmount = startAmount;
-while (currentAmount>0 || currentAmount<=winLimit){
+while (currentAmount>0 && currentAmount<winLimit){
     if (Math.random() < winChance){
         currentAmount++; 
     } else {
